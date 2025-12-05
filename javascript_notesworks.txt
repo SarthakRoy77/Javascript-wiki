@@ -28,3 +28,10 @@ If the stack grows too large due to deep recursion or blocking code, a stack ove
 
 "Call Stack maintains the order of execution of Execution contexts"
 It is also known as Execution Context Stack , Machine Stack, Program Stack ,Control Stack, Runtime Stack
+
+What is Hoisting???
+Hoisting in JavaScript is the behavior where variable and function
+declarations are moved to the top of their scope during the compilation phase-
+
+Functions are fully declared because in the Memory Allocation Phase, the code of the function is fully stored.
+Variables are partially declared because in MAP, only undefined is kept as the value of the variable
