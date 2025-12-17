@@ -36,8 +36,17 @@ declarations are moved to the top of their scope during the compilation phase-
 Functions are fully declared because in the Memory Allocation Phase, the code of the function is fully stored.
 Variables are partially declared because in MAP, only undefined is kept as the value of the variable
 
+
+What is the Variable Environment??
+It is the other name for the memory part in the execution contexts.
+
+
 How functions works??
 Functions are like mini programs and have their own local execution context in JavaScript
-and when a variable is called JavaScript searches the local execution context only 
+and when a variable is called ,JavaScript searches the local execution context only 
 not the global execution context so we can have the same variables for the global
- Execution context and the Local execution context
+Execution context and the Local execution context.
+
+When a function is invoked the Global Execution Context is stopped at that line 
+then the Local Execution Context is made and the same happens. The LEC is popped 
+off the call stack and deleted and control is back at the GEC line where it stopped

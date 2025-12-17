@@ -9,4 +9,7 @@ This repository collects notes, examples, exercises, and mini-projects created w
 - Document progress and useful references  
 - Share learning resources openly
 
+## SOURCE 
+- Akshay Saini : Namaste 🙏 Javascript 
+
 
