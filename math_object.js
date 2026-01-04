@@ -17,5 +17,6 @@ console.log(Math.sign(x)); // finds the sign of x
 console.log(Math.max(x,y,z)); //finds the maximum
 console.log(Math.min(x,y,z)); //finds the minimum
 console.log(Math.PI);//outputs pie
+console.log(Math.random())
    
 //and many more!!!
