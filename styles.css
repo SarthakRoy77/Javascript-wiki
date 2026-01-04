@@ -3,13 +3,3 @@ body{
     font-family: Verdana;
     text-align: center;
 }
-
-#myButton {
-    font-size: 3em;
-    padding: 3px 25px;
-    border-radius: 5px;
-}
-
-#myLabel {
-    font-size: 3em;
-}
