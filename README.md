@@ -13,4 +13,7 @@ This repository collects notes, examples, exercises, and mini-projects created w
 - Akshay Saini : Namaste 🙏 Javascript
 - Bro Code: Javascript Full course for free 🌐 
 
+## Note Learned:
+- Always put elements before the script designation
+
 
