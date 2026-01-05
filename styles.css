@@ -1,5 +1,17 @@
 body{
     background-color: rgb(43, 226, 98);
     font-family: Verdana;
-    text-align: center;
+    text-align: left;
+}
+
+#mySubmit {
+    font-size: 1em ;
+    background-color: rgb(237, 61, 13);
+    padding: 5px 25px;
+}
+
+#mySubmit:hover {
+    font-size: 1.1em;
+    background-color: rgb(236, 36, 9);
+    padding: 6px 36px;
 }
