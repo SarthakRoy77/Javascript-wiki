@@ -92,3 +92,11 @@ document.getElementById("BUTTON").onclick = function(){
 // Error so to avoid it we should change
 
 // const PI = 3.14159
+
+// ternary operator = a shortcut to if{} and else{} statements
+                    // helps to assign a variable based on a condition
+                    // condition ? codeIfTrue : codeIfFalse
+
+let age2 = 21;
+let message = age>18 ? "You're an adult" : "You're a minor"
+console.log(message)
