@@ -1,4 +1,4 @@
-var x = 7;
+let x = 7;
 function getName() {
     console.log("Javascript");
 }
