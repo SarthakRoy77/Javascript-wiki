@@ -1,0 +1,17 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SarthakRoy77/js.git"
+  },
+  "private": true,
+  "dependencies": {
+    "jsdom": "^27.4.0"
+  }
+}
