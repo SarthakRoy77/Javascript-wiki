@@ -1,5 +1,5 @@
 
-// Variable = A container that stores a value.Behavaes as if it were the value it contains
+// Variable = A container that stores a value.Behaves as if it were the value it contains
 // 1.declaration     let x;
 // 2.assignment      x = 100;
 
@@ -51,15 +51,15 @@ students = students / 2;
 // Exponentiation
 students = students ** 2;
 // Remainder
-let extrastudents = students % 3 ;
-
+let extraStudents = students % 3 ;
+console.log(extraStudents)
 // Augmented Assignment Operators
 // These are : +=, -=, *= , /=, **= , %=
 
 // Increment & Decrement Operators
 // students++;
 // students--; 
-// Thse either add 1 or subtract 1 to it .
+// These either add 1 or subtract 1 to it .
 
 
 /* operator precedence 
@@ -88,15 +88,43 @@ document.getElementById("BUTTON").onclick = function(){
     
 }
 
-// In this if the value of pi would be changd it would cause an Logical
+// In this if the value of pi would be changed it would cause a Logical
 // Error so to avoid it we should change
 
 // const PI = 3.14159
 
 // ternary operator = a shortcut to if{} and else{} statements
                     // helps to assign a variable based on a condition
-                    // condition ? codeIfTrue : codeIfFalse
+                    //  ? codeIfTrue : codeIfFalse
 
 let age2 = 21;
-let message = age>18 ? "You're an adult" : "You're a minor"
+let message = age2>18 ? "You're an adult" : "You're a minor"
 console.log(message)
+
+// Logical Operators = used to combine or manipulate boolean values
+
+//                  AND = &&
+//                  OR = ||
+//                  NOT = !
+
+const TEMP = 20;
+if (TEMP>20 && TEMP<10){
+    console.log("The weather is good");
+}
+
+//Strict Equality
+// = assignment operator
+// == comparison operator (compare if values are equal)
+// === strict equality operator (compare if values&datatypes are equal)
+// != inequality operator
+// !== strict inequality operator
+
+const pi = "3.14";
+
+if (pi === "3.14"){
+    console.log("That is PI");
+}
+else{
+    console.log("That is NOT PI");
+}
+
