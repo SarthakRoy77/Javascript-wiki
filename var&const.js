@@ -128,3 +128,27 @@ else{
     console.log("That is NOT PI");
 }
 
+
+//Variable scope = where a variable is recognized and accessible [local vs global]
+
+//Variables with the same name in the same scope will cause an error
+//While same names in different scopes will not cause an error.
+//The scopes are the local [function] and the global scope.
+
+let x1 = 1;
+
+function func1() {
+    let x1;
+    x1 = 1;
+    return x1;
+}
+
+function func2() {
+    let x1;
+    x1 = 2;
+    return x1;
+}
+
+console.log(func1());
+console.log(func2());
+console.log(x1);
