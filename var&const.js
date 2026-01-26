@@ -191,3 +191,9 @@ for (let i = 0; i <= fruits.length; i++) {
 
 // Alphabetical reversing and sorting
 fruits.sort().reverse();
+
+// Spread operator unpacks the elements of an array i.e. ...
+let listNumbers = [1,2,3,4,6];
+let maxNumber = Math.max(...listNumbers)
+
+console.log(maxNumber);
