@@ -152,3 +152,42 @@ function func2() {
 console.log(func1());
 console.log(func2());
 console.log(x1);
+
+
+//array = a variable like structure that can hold more than 1 value
+let fruits = ["apple", "orange", "banana"];
+
+// Changing and adding a value
+fruits[1] = "coconut";
+fruits[3] = "pineapple";
+// to push an element to the last index
+fruits.push("coconut");
+// to remove the element from the last index
+fruits.pop();
+// to add an element to the beginning of the array
+fruits.unshift("pineapple");
+// to remove an element to the beginning of the array
+fruits.shift();
+// accessing a value from an array
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+
+let numOfFruits = fruits.length;
+console.log(numOfFruits);
+
+// Finding the index of an element
+let index = fruits.indexOf("apple");
+console.log(index);
+
+// Checking if an element is in the array
+
+index === -1 ? console.log("The element is not found") : console.log("The element is found");
+
+// Iterating the array
+for (let i = 0; i <= fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+// Alphabetical reversing and sorting
+fruits.sort().reverse();
