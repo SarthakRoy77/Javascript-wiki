@@ -1,21 +1,21 @@
-Javascript is a programming language that is very famous.
+JavaScript is a programming language that is very famous.
 
 How JS works???
-"Everything in Javascript happens inside an Execution Context. "
+"Everything in JavaScript happens inside an Execution Context. "
 
 Execution Content - Execution context is made up of two components called the "variable environment" and "Thread of Execution"
 
-"Javascript is an synchronouse single threaded language"
-Single- threaded meaning Javascript can only execute one command at a time while synchrous meaning in a specific order
+"JavaScript is a synchronous single threaded language"
+Single-threaded meaning JavaScript can only execute one command at a time while synchrous meaning in a specific order
 
 How the code is executed??
-1. Javascript skims through the whole program and allocates memory to the functions and variables(as undefined for var) i.e. Memory Creation Phase
-2. Javascript once agains sees the programs and runs it and in the space of "undefinite" it stores the actual value i.e Code Execution Phase
-3.Javascript when the program is fully executed, deletes the global execution context.
+1. JavaScript skims through the whole program and allocates memory to the functions and variables(as undefined for var) i.e. Memory Creation Phase
+2. JavaScript once agains sees the programs and runs it and in the space of "undefinite" it stores the actual value i.e. Code Execution Phase
+JavaScript when the program is fully executed, deletes the global execution context.
 
-What is a Function Invoction in Javascript??
+What is a Function Invocation in JavaScript??
 Whenever you see a function name with parenthesis, it means the function is being executed.
-Functions are like a mini program in JS so , altogether an new execution context is made
+Functions are like a mini program in JS so , altogether a new execution context is made
 just like the global execution context, so again in the phase 1 all the variables will be stored 
 as undefined . Now the phase two is executed and all the variables are put with their respective values
 When the function invocation is done the function execution context is deleted.
@@ -26,7 +26,7 @@ When a function is called, it’s pushed onto the stack; when it finishes, it’
 JavaScript executes code synchronously, processing one stack frame at a time.
 If the stack grows too large due to deep recursion or blocking code, a stack overflow occurs.
 
-"Call Stack maintains the order of execution of Execution contexts"
+"Call Stack maintains the order of execution contexts"
 It is also known as Execution Context Stack , Machine Stack, Program Stack ,Control Stack, Runtime Stack
 
 What is Hoisting???
@@ -52,13 +52,13 @@ then the Function Execution Context is made and the same happens. The FEC is pop
 off the call stack and deleted and control is back at the GEC line where it stopped.
 
 A function execution context has two parts a global part and a local part.
-The global part contains the registered functions that comes with Javascript like
-addEventListener() etc. The local part consists of the local memory where Javascript 
+The global part contains the registered functions that comes with JavaScript like
+addEventListener() etc. The local part consists of the local memory where JavaScript
 searches for variables.
 
-What is the shortest Javascript program?
-It is just a empty file of JS. As it stil creates a GEC 
+What is the shortest JavaScript program?
+It is just an empty file of JS. As it stil creates a GEC
 
 What is Window?? 
-Window is a space in which functions made by the Javascript Engine is stored.
+Window is a space in which functions made by the JavaScript Engine is stored.
 When a GEC is made it comes with the Window space and the "this" variable
