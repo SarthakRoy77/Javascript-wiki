@@ -49,5 +49,34 @@ function goodbye() {
     console.log("goodbye");
 }
 
+sum(displayConsole, 1, 2)
+
+function sum(callback, x, y){
+    let result = x+y;
+    callback(result);
+}
+
+function displayConsole(result){
+    console.log(result);
+}
+
 // setTimeout function: first functionRef then lines of code and timeout
 // time in Milliseconds
+
+//forEach() = method used to iterate over the elements of an array
+//            and apply a specified function (callback) to each element
+
+//              array.forEach(callback), element, index, array are provided
+
+let numbers = [1,2,3,4,5];
+
+numbers.forEach(display)
+numbers.forEach(double);
+
+function display(element){
+    console.log(element);
+}
+
+function double(element , index, array){
+    array[index] = element * 2
+}
