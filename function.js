@@ -78,5 +78,59 @@ function display(element){
 }
 
 function double(element , index, array){
-    array[index] = element * 2
+    array[index] = element * 2;
+    console.log(array);
+
+}
+
+//.map() = method used to apply a callback to an array create a
+//         new array storing the callback applied values.
+//         It is similar to .forEach() function
+
+let mappingNumbers = [1,2,3,4,5,6]
+let mappedNumbers = mappingNumbers.map(cubed)
+
+console.log(mappedNumbers)
+
+function cubed(element){
+    return Math.pow(element, 3)
+}
+
+//.filter() = method to create a new array by filtering out elements.
+//            It keeps the element that return a 'true' boolean value
+//            filters out the elements that return a 'false' boolean value
+
+let nums = [1,2,3,3,4,5,2,3,4,6,4,];
+
+let evenNums = nums.filter(isEven);
+console.log(evenNums);
+function isEven(element){
+    return Number(element) % 2 === 0;
+}
+
+//.reduce() = reduces an array to one single value. It is the sum of the array.The accumulator
+//            parameter is the previous value and the element is the next value in relation to
+//            the accumulator.
+
+let prices = [30, 40, 50, 80, 90, 20]
+
+let bill = prices.reduce(sum_fx);
+console.log(`$${bill}`);
+
+let max = prices.reduce(getMax);
+console.log(max);
+
+let min = prices.reduce(getMin);
+console.log(min);
+
+function sum_fx(accumulator, element){
+    return accumulator + element;
+}
+
+function getMax(accumulator, element){
+    return Math.max(accumulator, element);
+}
+
+function getMin(accumulator, element){
+    return Math.min(accumulator, element);
 }
