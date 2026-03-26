@@ -134,3 +134,30 @@ function getMax(accumulator, element){
 function getMin(accumulator, element){
     return Math.min(accumulator, element);
 }
+
+// function expression = a way to define functions as values or variables
+
+//Example of defining functions as variables
+const printHello = function(){
+    console.log("Hello!");
+}
+
+printHello();
+
+//Example of defining functions as values:
+// Callbacks in asynchronous operations
+// High Order Functions
+// Closures
+// Event Listeners
+
+setTimeout(function(){
+    console.log("Hello! This came 1 seconds later");
+}, 1000); // 1 second later
+
+//arrow functions = are used for writing function expressions in a concise way e.g. (parameters) => some code
+
+const greet = (name) => {console.log(`Hello ${name}`)
+                              console.log(`Your name is ${name}`)
+};
+
+greet("Sarthak Roy")
