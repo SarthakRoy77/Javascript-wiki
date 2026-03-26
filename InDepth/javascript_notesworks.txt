@@ -62,3 +62,8 @@ It is just an empty file of JS. As it stil creates a GEC
 What is Window?? 
 Window is a space in which functions made by the JavaScript Engine is stored.
 When a GEC is made it comes with the Window space and the "this" variable
+
+How does Function expression work??
+Function Expression works by passing the function as a variable or a value.
+When we pass a function through a value it does creates it FEC [Function Execution Context]
+
