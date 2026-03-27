@@ -160,4 +160,5 @@ const greet = (name) => {console.log(`Hello ${name}`)
                               console.log(`Your name is ${name}`)
 };
 
-greet("Sarthak Roy")
+greet("Sarthak Roy");
+
