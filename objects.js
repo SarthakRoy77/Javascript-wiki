@@ -86,3 +86,23 @@ class CircleUtil{
 console.log(CircleUtil.PI);
 console.log(CircleUtil.getCircumference(10));
 console.log(CircleUtil.getArea(10));
+
+// inheritance = allows a new class to inherit properties and method from
+//               an existing class (parent -> child).Helps with code reusability
+
+class Animal{
+    alive = true;
+    name;
+
+    eat(){
+        console.log(`This ${this.name} is eating`)
+    }
+}
+
+class Rabbit extends Animal{
+    name = "Rabbit";
+}
+
+const rabbit = new Rabbit() //
+rabbit.eat()
+console.log(rabbit.alive)
