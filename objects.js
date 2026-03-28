@@ -48,3 +48,41 @@ console.log(Car1.make);
 console.log(Car1.model);
 console.log(Car1.year);
 console.log(Car1.color);
+
+// class = (E26 feature) provides a more structural and cleaner way to
+//           work with objects compared to traditional constructor function
+//          and also helps with new concepts that are to be learned.
+//          e.x. static keyword, encapsulation, inheritance
+
+class Product{
+    constructor(name1, price){
+        this.name1 = name1;
+        this.price = price;}
+
+        displayProduct(){
+            console.log(`Product Name: ${this.name1}`);
+            console.log(`Product Price: $${this.price}`);
+        }
+}
+
+const Product1 = new Product("Shirt", 19.99)
+Product1.displayProduct();
+
+// static keyword = defines properties or methods that belong to a class itself rather than
+//                  the objects created by the class(class owns anything static, not the objects)
+
+class CircleUtil{
+    static PI = 3.14159;
+
+    static getCircumference(radius){
+        return 2 * this.PI * radius;
+    }
+
+    static getArea(radius){
+        return 2 * Math.pow(radius, 2);
+    }
+}
+
+console.log(CircleUtil.PI);
+console.log(CircleUtil.getCircumference(10));
+console.log(CircleUtil.getArea(10));
