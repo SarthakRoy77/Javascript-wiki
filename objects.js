@@ -89,20 +89,116 @@ console.log(CircleUtil.getArea(10));
 
 // inheritance = allows a new class to inherit properties and method from
 //               an existing class (parent -> child).Helps with code reusability
-
 class Animal{
     alive = true;
     name;
-
     eat(){
-        console.log(`This ${this.name} is eating`)
-    }
+        console.log(`This ${this.name} is eating`);
+    };
 }
+
 
 class Rabbit extends Animal{
     name = "Rabbit";
 }
+const rabbit = new Rabbit(); //
 
-const rabbit = new Rabbit() //
-rabbit.eat()
-console.log(rabbit.alive)
+rabbit.eat();
+console.log(rabbit.alive);
+
+//super keyword = is used in classes to call the constructor and access
+//                  the properties and methods of a parent class (superclass)
+
+class domesticAnimal {
+    name;
+
+    constructor(name) {
+        this.name = name;
+    }
+
+    describe() {
+        console.log(`My name is ${this.name}`);
+    }
+}
+
+class domesticDog extends domesticAnimal {
+    speed;
+    age;
+
+    constructor(name, speed, age) {
+        super(name);
+        this.speed = speed;
+        this.age = age;
+    }
+}
+
+class domesticFish extends domesticAnimal {
+    swimSpeed;
+    age;
+
+    constructor(name, swimSpeed, age) {
+        super(name);
+        this.swimSpeed = swimSpeed;
+        this.age = age;
+    }
+}
+
+class domesticHawk extends domesticAnimal {
+    flySpeed;
+    age;
+
+    constructor(name, flySpeed, age) {
+        super(name);
+        this.flySpeed = flySpeed;
+        this.age = age;
+    }
+}
+
+const Tommy = new domesticDog("Tommy", 16, 5);
+Tommy.describe();
+
+const Rohu = new domesticFish("Rohu", 36, 1);
+Rohu.describe();
+
+const GodEagle = new domesticHawk("GodEagle", 30, 7);
+GodEagle.describe();
+
+//getters and setters = These are used in object validation
+
+//Setters
+class Rectangle{
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    set width(newWidth) {
+        if (newWidth > 0) {
+            this._width = newWidth;
+        } else {
+            console.error("Width must be positive");
+        }
+    }
+    set height(newHeight) {
+        if (newHeight > 0) {
+            this._height = newHeight;
+        }
+        else{
+            console.error("Height must be positive");
+        }
+
+    }
+
+    get width() {
+        return this._width;
+    }
+
+    get height() {
+        return this._height;
+    }
+
+}
+
+const rectangleObject = new Rectangle(-23, -10);
+console.log(rectangleObject.height);
+console.log(rectangleObject.width);
