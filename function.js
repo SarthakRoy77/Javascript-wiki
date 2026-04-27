@@ -162,3 +162,101 @@ const greet = (name) => {console.log(`Hello ${name}`)
 
 greet("Sarthak Roy");
 
+//destructuring = arrange values in a different order for convenience
+//                [] for arrays
+//                {} for objects
+
+// Example 1 : Swapping values of variables
+
+let numberA = 1;
+let numberB = 2;
+
+[numberA, numberB] = [numberB, numberA];
+console.log(numberA);
+console.log(numberB);
+
+//Example 2 : Swapping elements of an array
+
+const colors = ["red", "green", "blue", "black", "white"];
+
+[colors[0], colors[4]] = [colors[4], colors[0]];
+
+console.log(colors);
+
+//Example 3: Assign array elements to variables
+
+const colors1 = ["red", "green", "blue", "black", "white"];
+
+let firstColor ;
+let secondColor ;
+let thirdColor ;
+
+let extraColors;
+[firstColor,secondColor, thirdColor, ...extraColors] = colors1;
+
+console.log(firstColor);
+console.log(secondColor);
+console.log(thirdColor);
+console.log(extraColors);
+
+//Example 4 : Extract values from objects
+
+const person1 = {
+    name : "Sarthak Roy",
+    age : 12,
+    job: "Engineer"
+}
+
+const {name, age, job="Unemployed"} = person1;
+
+console.log(name);
+console.log(age);
+console.log(job);
+
+//Example 5: Destructure in function parameters
+
+function displayPerson({name, age, job}) {
+    console.log(name);
+    console.log(age);
+    console.log(job);
+}
+
+const person2 = {
+    name : "Ankita Roy",
+    age : 18,
+    job: "Doctor"
+}
+
+displayPerson(person2);
+
+//nested objects = Objects inside of objects which helps in making very complex data structures
+//                  e.g. computerSetup{CPU{}, GPU{}, Motherboard{}}
+
+const ComputerSetup = {
+    place: "Sarthak's Room",
+    core: "MI Notebook 14",
+    CPU : {
+        name: "Intel i3 10100U",
+        clockSpeed: 2.10
+    },
+    GPU : {
+        name: "Intel(R) UHD Graphics",
+        GPUMemory: 3.9
+    },
+    RAMMemory : {
+        memory: 8,
+        type : "DDR4"
+    }
+}
+
+console.log(ComputerSetup.place);
+console.log(ComputerSetup.core);
+console.log(ComputerSetup.CPU.name);
+
+for (const property in ComputerSetup.CPU){
+    console.log(ComputerSetup.CPU[property]);
+}
+
+for (const property in ComputerSetup.GPU){
+    console.log(ComputerSetup.GPU[property]);
+}
